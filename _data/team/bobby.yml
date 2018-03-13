@@ -1,6 +1,7 @@
 name: "Bobby Showalter"
 image: "/team/bobby.jpg"
 title: "Lead Designer"
+profiles:
 - profile_name: "blog"
   profile_link: "http://www.bshow.co/"
 - profile_name: "instagram"
