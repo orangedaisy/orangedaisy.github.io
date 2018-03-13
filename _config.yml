@@ -1,6 +1,14 @@
+# site settings
 title: "orange daisy"
 description: "orange daisy is a team of web craftsmen from southern Appalachia."
 url: "http://www.orangedaisy.co"
+navigation:
+  - name: "Work"
+    path: "/work/"
+  - name: "Team"
+    path: "/team/"
+  - name: "Contact"
+    path: "/contact/"
 repository: orangedaisy/orangedaisy.github.io
 
 # Build settings

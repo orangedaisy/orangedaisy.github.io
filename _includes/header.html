@@ -1,0 +1,15 @@
+<header>
+  <nav>
+    <a href="/" title="orange daisy">orange daisy</a>
+
+    <ul>
+      {% for link in site.navigation %}
+        <li>
+          <a href="{{ link.path }}" title="{{ link.name }}">
+            {{ link.name }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>
