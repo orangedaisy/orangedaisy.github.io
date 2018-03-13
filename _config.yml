@@ -1,0 +1,16 @@
+url: "http://www.orangedaisy.co"
+repository: orangedaisy/orangedaisy.github.io
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+host: 0.0.0.0
+port: 3000
+
+plugins:
+  - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - CNAME
