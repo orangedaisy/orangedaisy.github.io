@@ -1,0 +1,15 @@
+---
+layout: default
+---
+{% for website_hash in site.data.work %}
+{% assign website = website_hash[1] %}
+<div>
+  <h2>{{ website.name }}</h2>
+  <img src="/assets/images{{ website.image }}" title="Preview image of the {{ website.name }} website">
+  <p>
+    <a href="{{ website.link }}" title="Visit the {{ website.name }} site">
+      Visit site &rarr;
+    </a>
+  </p>
+</div>
+{% endfor %}
