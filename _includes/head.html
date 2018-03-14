@@ -1,0 +1,27 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ site.description }}">
+
+  <title>
+    {% if page.name == "index.html" %}
+
+      {{ site.title}}
+
+    {% else %}
+
+      {% for item in site.navigation %}
+
+        {% if page.name == item.file %}
+          {{ item.name }} &dash; {{ site.title }}
+        {% endif %}
+
+      {% endfor %}
+
+    {% endif %}
+  </title>
+
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lora|Questrial">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
