@@ -1,0 +1,45 @@
+// margin classes
+@each $scale, $size in $size-scale {
+  @each $direction-name, $direction in $directions {
+    @if $direction-name == 'all' {
+      .m-#{$scale} {
+        margin: #{$size}rem;
+      }
+    } @else {
+      .m-#{$direction}#{$scale} {
+        @if $direction-name == 'vertical' {
+          margin-top: #{$size}rem;
+          margin-bottom: #{$size}rem;
+        } @else if $direction-name == 'horizontal' {
+          margin-right: #{$size}rem;
+          margin-left: #{$size}rem;
+        } @else {
+          margin-#{$direction-name}: #{$size}rem;
+        }
+      }
+    }
+  }
+}
+
+// padding classes
+@each $scale, $size in $size-scale {
+  @each $direction-name, $direction in $directions {
+    @if $direction-name == 'all' {
+      .p-#{$scale} {
+        padding: #{$size}em;
+      }
+    } @else {
+      .p-#{$direction}#{$scale} {
+        @if $direction-name == 'vertical' {
+          padding-top: #{$size}em;
+          padding-bottom: #{$size}em;
+        } @else if $direction-name == 'horizontal' {
+          padding-right: #{$size}em;
+          padding-left: #{$size}em;
+        } @else {
+          padding-#{$direction-name}: #{$size}em;
+        }
+      }
+    }
+  }
+}

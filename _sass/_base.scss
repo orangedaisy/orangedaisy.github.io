@@ -1,0 +1,41 @@
+html {
+  background-color: $c-tan;
+  color: $c-dark-blue;
+  font-family: $f-serif;
+  font-size: remem(2, rem);
+  line-height: 1.5;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: min-content 1fr min-content;
+}
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    font-weight: 400;
+  }
+}
+
+a {
+  color: $c-dark-blue;
+  display: inline-block;
+  font-family: $f-sans;
+  letter-spacing: remem(quarter, em);
+  text-transform: uppercase;
+  transition:
+    opacity $timing,
+    word-spacing $timing;
+
+  &:hover,
+  &:focus {
+    opacity: .6;
+    word-spacing: remem(half, em);
+  }
+}

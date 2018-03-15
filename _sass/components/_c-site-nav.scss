@@ -1,0 +1,26 @@
+.c-site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+  }
+
+  &__link.is-current {
+    background-color: $c-dark-blue;
+    color: $c-tan;
+  }
+
+  &__link:not(&__wordmark) {
+    border-left: 1px solid $c-dark-blue;
+  }
+
+  &__wordmark {
+    border-right: 1px solid $c-dark-blue;
+  }
+}

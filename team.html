@@ -1,18 +1,22 @@
 ---
 layout: default
 ---
-{% for team_hash in site.data.team %}
-{% assign team_member = team_hash[1] %}
-<div>
-  <h2>{{ team_member.name }}</h2>
-  <img src="/assets/images{{ team_member.image }}" alt="{{ team_member.alt }}">
-  <h3>{{ team_member.title }}</h3>
-  <div>
-    {% for profile in team_member.profiles %}
-    <a href="{{ profile.profile_link }}" title="{{ team_member.name }}'s {{ profile.profile_name }}">
-      {{ profile.profile_name }}
-    </a>
-    {% endfor %}
-  </div>
+<div class="c-team-display">
+  {% for team_hash in site.data.team %}
+  {% assign team_member = team_hash[1] %}
+  <article class="c-card m-2">
+    <header class="c-card__header p-2">
+      <h2 class="c-card__title">{{ team_member.name }}</h2>
+    </header>
+    <img class="c-card__image" src="/assets/images{{ team_member.image }}" alt="{{ team_member.alt }}">
+    <h3 class="c-card__title--sub p-base">{{ team_member.title }}</h3>
+    <footer class="c-card__footer c-card__links-list">
+      {% for profile in team_member.profiles %}
+      <a class="c-card__link text-center p-base" href="{{ profile.profile_link }}" title="{{ team_member.name }}'s {{ profile.profile_name }}">
+        {{ profile.profile_name }}
+      </a>
+      {% endfor %}
+    </footer>
+  </article>
+  {% endfor %}
 </div>
-{% endfor %}

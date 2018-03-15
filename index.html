@@ -1,18 +1,18 @@
 ---
 layout: default
 ---
-<div>
-  <h1>{{ site.description }}</h1>
+<div class="c-site-greeting">
+  <h1 class="c-site-greeting__description">{{ site.description }}</h1>
 
-  <h2>
+  <h2 class="c-site-greeting__hook">
     We help small businesses like
-    <a href="{{ '/work/' | relative_url }}" title="View our portfolio, featuring great clients like {{ site.data.work.ltbp.name }}">
+    <a class="text-small-caps" href="{{ '/work/' | relative_url }}" title="View our portfolio, featuring great clients like {{ site.data.work.ltbp.name }}">
       {{ site.data.work.ltbp.name }}
     </a>
     create memorable web experiences.
   </h2>
 
-  <p>
+  <p class="c-site-greeting__cta">
     <a href="{{ '/contact/' | relative_url }}" title="Contact us to start your website">
       Get started &rarr;
     </a>

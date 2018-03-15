@@ -24,3 +24,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - CNAME
+
+sass:
+  style: compressed

@@ -1,13 +1,17 @@
 ---
 layout: default
 ---
-<p>Ready to work together? Tell us about your project.</p>
+<article style="margin: 0 auto; max-width: 56rem;" class="c-card">
+  <header class="c-card__header text-center p-2">
+    <h1 class="c-card__title">Ready to work together? Tell us about your project.</h1>
+  </header>
 
-{% include contact_form.html %}
+  {% include contact_form.html %}
 
-<p>
-  Want to just say "hello"? Drop us a line at
-  <a href="mailto:hello@orangedaisy.co" title="Draft a new email to hello at orangedaisy dot co">
-    hello@orangedaisy.co
-  </a>
-</p>
+  <h3 class="c-card__title--sub text-center p-2">
+    Want to just say "hello"? Drop us a line at
+    <a class="text-small-caps" href="mailto:hello@orangedaisy.co" title="Draft a new email to hello at orangedaisy dot co">
+      hello@orangedaisy.co
+    </a>.
+  </h3>
+</article>

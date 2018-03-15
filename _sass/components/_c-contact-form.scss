@@ -1,0 +1,83 @@
+.c-contact-form {
+
+  &__label,
+  &__field {
+    display: block;
+    padding: remem(base, rem);
+    width: 100%;
+  }
+
+  &__field + &__label {
+    margin-top: remem(2, rem);
+  }
+
+  &__field {
+    background-color: rgba($c-dark-blue, .15);
+    border: 0;
+    border-top: $dark-blue-border;
+    border-bottom: $dark-blue-border;
+
+    &:focus {
+      background-color: white;
+    }
+  }
+
+  @supports (grid-auto-rows: 100%) {
+    @media screen and (min-width: 36rem) {
+      background-color: $c-dark-blue;
+      display: grid;
+      grid-gap: 1px;
+      grid-template-columns: auto 1fr;
+
+      &__field + &__label {
+        margin-top: 0;
+      }
+
+      &__label {
+        background-color: $c-tan;
+      }
+
+      &__field {
+        background-color: rgba($c-tan, .85);
+        border: 0;
+      }
+
+      &__actions {
+        background-color: $c-tan;
+        grid-column: 1 / span 2;
+      }
+    }
+  }
+
+  &__button {
+    background-color: $c-tan;
+    border: {
+      top: 0;
+      right: $dark-blue-border;
+      bottom: 0;
+      left: $dark-blue-border;
+    }
+    color: $c-dark-blue;
+    cursor: pointer;
+    font-family: $f-sans;
+    letter-spacing: remem(quarter, em);
+    text-decoration: underline;
+    text-transform: uppercase;
+    transition:
+      background-color $timing,
+      color $timing;
+
+    &:hover,
+    &:focus {
+      background-color: $c-dark-blue;
+      color: $c-tan;
+    }
+  }
+
+  &__message {
+    background-color: $c-dark-blue;
+    color: $c-tan;
+    display: none;
+    margin: 0;
+  }
+}

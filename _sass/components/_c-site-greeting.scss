@@ -1,0 +1,15 @@
+.c-site-greeting {
+  margin: 0 auto;
+  max-width: 56rem;
+
+  &__description,
+  &__cta {
+    font-size: calc(1vmax + #{remem(base, em)});
+    margin: 0;
+  }
+
+  &__hook {
+    font-size: calc(1vmax + #{remem(2, em)});
+    margin: remem(5, em) 0;
+  }
+}

@@ -1,0 +1,36 @@
+// colors
+$c-tan: #ede0ce;
+$c-dark-blue: #035;
+
+// fonts
+$f-sans: 'Questrial', sans-serif;
+$f-serif: 'Lora', serif;
+
+// sizing system
+$size-scale-base: 8;
+$size-scale: (
+  quarter: ($size-scale-base / 4) / 16,
+  half: ($size-scale-base / 2) / 16,
+  base: $size-scale-base / 16,
+  2: ($size-scale-base * 2) / 16,
+  3: ($size-scale-base * 3) / 16,
+  4: ($size-scale-base * 4) / 16,
+  5: ($size-scale-base * 5) / 16,
+  6: ($size-scale-base * 6) / 16,
+  7: ($size-scale-base * 7) / 16,
+  8: ($size-scale-base * 8) / 16
+);
+
+$directions: (
+  all: '',
+  vertical: 'v-',
+  horizontal: 'h-',
+  top: 't-',
+  right: 'r-',
+  bottom: 'b-',
+  left: 'l-'
+);
+
+// misc
+$timing: 150ms ease-out;
+$dark-blue-border: 1px solid $c-dark-blue;

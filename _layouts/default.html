@@ -11,11 +11,13 @@
 
     {% include header.html %}
 
-    <main>
+    <main class="c-site-main p-2">
       {{ content }}
     </main>
 
     {% include footer.html %}
 
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="{{ '/assets/javascripts/scripts.js' | relative_url }}"></script>
   </body>
 </html>

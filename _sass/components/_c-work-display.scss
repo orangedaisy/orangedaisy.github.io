@@ -1,0 +1,14 @@
+.c-work-display {
+  display: flex;
+  flex-wrap: wrap;
+
+  > article {
+    flex: 0 0 24rem;
+  }
+
+  @supports (grid-auto-rows: 100%) {
+    display: grid;
+    align-items: start;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  }
+}

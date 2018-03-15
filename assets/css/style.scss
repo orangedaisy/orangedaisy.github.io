@@ -1,0 +1,30 @@
+---
+---
+@charset 'utf-8';
+
+// helpers
+@import 'helpers/variables';
+@import 'helpers/functions';
+@import 'helpers/mixins';
+
+@include border-box();
+
+@import 'helpers/normalize';
+
+// base styles
+@import 'base';
+
+// components
+@import 'components/c-site-header';
+@import 'components/c-site-footer';
+@import 'components/c-site-nav';
+@import 'components/c-site-main';
+@import 'components/c-site-greeting';
+@import 'components/c-work-display';
+@import 'components/c-team-display';
+@import 'components/c-card';
+@import 'components/c-contact-form';
+
+// utilities
+@import 'utilities/sizing';
+@import 'utilities/text';

@@ -1,0 +1,11 @@
+.c-team-display {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 56rem;
+
+  > article {
+    flex: 1 1 20rem;
+  }
+}

@@ -1,11 +1,15 @@
-<header>
-  <nav>
-    <a href="/" title="orange daisy">orange daisy</a>
+<header class="c-site-header">
+  <nav class="c-site-nav">
+    <a class="c-site-nav__link c-site-nav__wordmark p-v-2 p-h-3" href="/" title="orange daisy">orange daisy</a>
 
-    <ul>
+    <ul class="c-site-nav__list">
       {% for link in site.navigation %}
-        <li>
-          <a href="{{ link.path }}" title="{{ link.name }}">
+        {% assign link_classes = 'c-site-nav__link p-v-2 p-h-3' %}
+        {% if page.url == link.path %}
+          {% assign link_classes = link_classes | append: ' is-current' %}
+        {% endif %}
+        <li class="c-site-nav__item">
+          <a class="{{ link_classes }}" href="{{ link.path }}" title="{{ link.name }}">
             {{ link.name }}
           </a>
         </li>

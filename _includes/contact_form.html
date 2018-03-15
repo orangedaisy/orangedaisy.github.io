@@ -1,26 +1,26 @@
-<form action="#">
+<form id="rfqForm" class="c-contact-form" method="post" action="#">
 
-  <label>
+  <label class="c-contact-form__label" for="name">
     Name
-    <input type="text" name="name" required>
   </label>
+  <input id="name" class="c-contact-form__field" type="text" name="name" autocomplete="name" required autofocus>
 
-  <label>
+  <label class="c-contact-form__label" for="replyto">
     Email
-    <input type="email" name="replyto" required>
   </label>
+  <input id="replyto" class="c-contact-form__field" type="email" name="replyto" autocomplete="email" required>
 
-  <label>
+  <label class="c-contact-form__label" for="message">
     Introduce us to your project
-    <textarea name="message" required></textarea>
   </label>
+  <textarea id="message" class="c-contact-form__field c-contact-form__field--textarea" name="message" rows="4" required></textarea>
 
-  <p>
-    <button type="submit">send</button>
-  </p>
+  <div class="c-contact-form__actions text-center">
+    <button class="c-contact-form__button p-v-2 p-h-3" type="submit">send</button>
+  </div>
 
 </form>
 
-<p>
+<h3 class="c-contact-form__footer c-contact-form__message text-center p-3 js-form-success-message">
   Thank you for your message! We'll get back to you within two working days.
-</p>
+</h3>
