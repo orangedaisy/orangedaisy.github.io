@@ -12,3 +12,11 @@ $('#rfqForm').submit(function(){
   });
   return false; //to stop the form from submitting
 });
+
+// responsive nav toggle
+const navToggle = document.querySelector('.js-nav-toggle');
+const navList   = document.querySelector('.js-nav-list');
+
+navToggle.addEventListener('click', () => {
+    navList.classList.toggle('is-open');
+});
