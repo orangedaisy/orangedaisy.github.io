@@ -9,3 +9,5 @@ profiles:
   profile_link: "https://www.instagram.com/bobbyshowalter/"
 - profile_name: "github"
   profile_link: "https://github.com/orangedaisy/"
+- profile_name: "codepen"
+  profile_link: "https://codepen.io/bobbyshowalter/"
