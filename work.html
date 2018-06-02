@@ -13,6 +13,11 @@ layout: default
       <a class="c-card__link p-2" href="{{ website.link }}" title="Visit the {{ website.name }} site">
         Visit site &rarr;
       </a>
+      {% if website contains 'case-study' %}
+        <a class="c-card__link p-2" href="{{ website.case-study }}" title="Read our case study for {{ website.name}}">
+          Case study &rarr;
+        </a>
+      {% endif %}
     </footer>
   </article>
   {% endfor %}
