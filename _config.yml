@@ -1,7 +1,7 @@
 # site settings
 title: "orange daisy"
 description: "orange daisy is a team of web craftsmen from southern Appalachia."
-url: "http://www.orangedaisy.co"
+url: "https://www.orangedaisy.co"
 navigation:
   - name: "Work"
     path: "/work/"
