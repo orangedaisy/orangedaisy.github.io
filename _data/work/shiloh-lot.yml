@@ -4,4 +4,13 @@
 
 name: "Shiloh Lot"
 image: "/work/shiloh_1x.png"
-link: "https://www.orangedaisy.co/shiloh-lot"
+description: |
+  The requirements for this project were pretty simple: show some pictures,
+  provide a description, and link some documents. We took those simple
+  requirements and ran with an idea to create something that looked like an ad
+  you might see in a newspaper, relying on a clearly defined layout to section
+  the information.
+
+  The lot is no longer for sale, but we still have the site available for
+  viewing at the below link.
+site_link: "https://www.orangedaisy.co/shiloh-lot"

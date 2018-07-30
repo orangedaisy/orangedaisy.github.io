@@ -1,14 +1,8 @@
 .c-work-display {
-  display: flex;
-  flex-wrap: wrap;
+  columns: 2 30rem;
+  column-gap: 1rem;
 
-  > article {
-    flex: 0 0 24rem;
-  }
-
-  @supports (grid-auto-rows: 100%) {
-    display: grid;
-    align-items: start;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  .c-card {
+    break-inside: avoid;
   }
 }

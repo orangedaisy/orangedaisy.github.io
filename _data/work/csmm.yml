@@ -4,4 +4,30 @@
 
 name: "Cordelia Smythe Murder Mysteries"
 image: "/work/csmm_1x.png"
-link: "http://www.cordeliasmythemysteries.com"
+site_link: "http://www.cordeliasmythemysteries.com"
+description: |
+  Cordelia Smythe is the ficticious namesake of a murder mystery dinner party
+  company based in northern California. When we were contracted to redesign
+  their ecommerce website, we knew we had to emphasize this special character.
+
+  We spent a lot of time with the client hashing out the content, design, and
+  presentation of their website to ensure it matched the level of care and
+  detail they put into all of their mysteries.  In order to keep the process
+  fast and efficient, we utilized CodePen to rapidly iterate through ideas.
+
+  The first deliverable we worked on was the [Brand
+  Profile](https://codepen.io/bobbyshowalter/full/25790e277f284af192a958fba1a295e9/).
+  Since we were reusing the majority of the content from the old design, this
+  step gave us an opportunity to define the building blocks for the rest of the
+  elements in the design. Using the brand profile, we created mockups for some
+  of the primary content components&mdash;like telegrams, postcards, and
+  notes&mdash;as well as a full-page mockup for an individual mystery feature.
+
+  Iterating through these pieces in a dependency-free environment like CodePen
+  kept us focused on the task at hand, and made sure we weren't getting caught
+  up in too many distracting details. Our goal for the design was to pull the
+  user into the world of Cordelia Smythe before they received their murder
+  mystery. We think we captured Cordelia's spirit well, and the client was
+  thrilled with the result.
+extra_link_url: "https://codepen.io/bobbyshowalter/full/25790e277f284af192a958fba1a295e9/"
+extra_link_text: "Brand Profile"

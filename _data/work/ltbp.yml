@@ -4,5 +4,22 @@
 
 name: "LTB Photography"
 image: "/work/ltbp_1x.png"
-link: "http://www.ltbphotography.com"
-case-study: "https://www.bshow.co/2018/04/17/ltb-photography-and-admin-ux/"
+site_link: "http://www.ltbphotography.com"
+description: |
+  Lori has been a family friend for nearly a decade, so we were thrilled when
+  she asked us to design her photography studio's website. Her beautiful
+  photography is featured heavily throughout the site, of course, but we
+  focused most of our attention on the admin panel.
+
+  Making sure Lori had the tools and interface necessary to keep the site
+  current was a very important goal during our process. We worked closely with
+  Lori to understand her ideal workflow, and used a combination of built-in
+  WordPress functionality and extra plugins to craft an editing experience that
+  would be as delightful as her pictures.
+
+  Empowering clients to feel confident in their website is an important
+  objective of ours. We have a [case
+  study](https://www.bshow.co/2018/04/17/ltb-photography-and-admin-ux/) of the
+  admin panel work available on Bobby's blog.
+extra_link_url: "https://www.bshow.co/2018/04/17/ltb-photography-and-admin-ux/"
+extra_link_text: "Case Study"
